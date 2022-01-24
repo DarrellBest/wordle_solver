@@ -32,3 +32,45 @@ Worst 10 words to start with are:
 
 pValue less than 0.05 so we reject the null hypothesis. (there is a significant difference).
 This just means it matters what word you start with.
+
+#################################################################################################
+
+The 'Help me solve' function is for educational purposes only. Please do not cheat or it ruins the fun!
+If you want to use this function just uncomment the line in main.py before you run. 
+
+Step 1. Go to https://www.powerlanguage.co.uk/wordle/
+Step 2. Guess a word on the website
+Step 3. Enter the word into this program at the prompt
+Step 4. Enter your result in the prompt. 
+Step 5. Repeat steps 1 - 4 until solved.
+
+Enter the result as a 5 digit number. For example, the solution is DRANK and you TREAD. The solution number would look like 02011.
+0: Letter not in word, 1: Letter is in the wrong position, 2: letter is in the correct position
+
+
+An example solve:
+
+    Most likely word(s): ['slate', 'sauce', 'slice', 'shale', 'saute', 'share', 'sooty', 'shine', 'suite', 'crane']
+
+    Guessed word: slate
+    Result? Example 12002: 01000
+    There are 87 words remaining.
+
+    Most likely word(s): ['golly', 'dolly', 'folly', 'gully', 'dully', 'bully', 'holly', 'fully', 'jolly', 'dilly']
+
+    Guessed word: golly
+    Result? Example 12002: 01120
+    There are 2 words remaining.
+
+    Most likely word(s): ['droll', 'knoll']
+
+    Guessed word: droll
+    Result? Example 12002: 00222
+    There are 1 words remaining.
+
+    Most likely word(s): ['knoll']
+
+    Guessed word: knoll
+    Result? Example 12002: 22222
+    The solution has been found in 4 steps!
+
