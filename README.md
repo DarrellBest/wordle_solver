@@ -1,6 +1,9 @@
 # wordle_solver
 I got bored and wrote a world solver... Its pretty good though, just saying
 
+TLDR--- Solves in 3.59 turns with a 99% success rate
+
+
 This solver uses a combination of letter frequency calculations and word list pruning techniques.
 
 I had two goals when writting this code:
@@ -9,8 +12,6 @@ I had two goals when writting this code:
 3. Run an experiment to determine if there is a significant difference in the number of turns it takes to solve versus the starting word.
 
 Here are the results of the experiment which can be replicated by running the code yourself.
-
-TLDR--- Solves in 3.59 turns with a 99% success rate
 
 Top 10 words to start with are:
     ['tread', 'raspy', 'lusty', 'grand', 'posit', 'shale', 'crust', 'lyric', 'tenor', 'horde']
