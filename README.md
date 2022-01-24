@@ -1,4 +1,4 @@
-# wordle_solver
+# Wordle Solver
 I got bored and wrote a wordle solver... Its pretty good though, just saying. Please go support Josh and have fun with Wordle on the official website https://www.powerlanguage.co.uk/wordle/
 
 TLDR--- Solves in 3.59 turns with a 99% success rate
