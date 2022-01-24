@@ -44,10 +44,6 @@ If you want to use this function just uncomment the line in main.py before you r
 - Step 4. Enter your result in the prompt. 
 - Step 5. Repeat steps 1 - 4 until solved.
 
-Enter the result as a 5 digit number. For example, the solution is DRANK and you TREAD. The solution number would look like 02011.
-0: Letter not in word, 1: Letter is in the wrong position, 2: letter is in the correct position
-
-
 An example solve:
 
     Most likely word(s): ['slate', 'sauce', 'slice', 'shale', 'saute', 'share', 'sooty', 'shine', 'suite', 'crane']
