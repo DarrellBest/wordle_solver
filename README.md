@@ -6,7 +6,7 @@ TLDR--- Solves in 3.59 turns with a 99% success rate
 
 This solver uses a combination of letter frequency calculations and word list pruning techniques.
 
-I had two goals when writting this code:
+I had three goals when writting this code:
 1. Write a solver that works
 2. Optimize using different techniques
 3. Run an experiment to determine if there is a significant difference in the number of turns it takes to solve versus the starting word.
