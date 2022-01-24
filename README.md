@@ -12,7 +12,7 @@ Here are the results of the experiment which can be replicated by running the co
 
 TLDR--- Solves in 3.59 turns with a 99% success rate
 
-Top 10words to start with are:
+Top 10 words to start with are:
     ['tread', 'raspy', 'lusty', 'grand', 'posit', 'shale', 'crust', 'lyric', 'tenor', 'horde']
 
 Worst 10 words to start with are:
