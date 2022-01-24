@@ -132,15 +132,25 @@ class Solver:
         return word, solved_counts
 
     def help_me_solve(self):
+        print('This is for educational purposes only. Please do not cheat or it ruins the fun!\n')
+        print('Step 1. Go to https://www.powerlanguage.co.uk/wordle/')
+        print('Step 2. Guess a word on the website')
+        print('Step 3. Enter the word into this program at the prompt')
+        print('Step 4. Enter your result in the prompt. ')
+        print('Step 5. Repeat steps 1 - 4 until solved.')
+        print('\nEnter the result as a 5 digit number. For example, the solution is DRANK and you TREAD. '
+              'The solution number would look like 02011.')
+        print('0: Letter not in word, 1: Letter is in the wrong position, 2: letter is in the correct position')
+
         self.filtered_words = self.words.copy()
-        self.sort_words()
         solved = False
         steps = 0
 
         while not solved:
-            print(f'Top 10 Words: {self.filtered_words[:10]}')
-            word_guess = input('Guess a word:')
-            result = input('Result? Example: 12002:')
+            self.sort_words()
+            print(f'\nMost likely word(s): {self.filtered_words[:10]}')
+            word_guess = input('\nGuessed word: ')
+            result = input('Result? Example 12002: ')
             result = [int(char) for char in result]
             steps += 1
 
