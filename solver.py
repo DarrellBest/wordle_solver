@@ -27,7 +27,8 @@ class Solver:
         p.cpu_affinity(all_cpus)
 
     def filter_words(self, word_guess: str, result: List[int]):
-        self.filtered_words.remove(word_guess)
+        if word_guess in self.filtered_words:
+            self.filtered_words.remove(word_guess)
 
         for i, (val, char) in enumerate(zip(result, word_guess)):
             if val == 2:
@@ -70,15 +71,15 @@ class Solver:
         logger.info(f'\nTop 10 results are: \n{list(result_dict.keys())[:10]}')
         logger.info(f'\nWorst 10 results are: \n{list(result_dict.keys())[-10:]}')
         logger.info(f'\nBest word: {result_list[0][0]} \n'
-                    f'Mean {statistics.mean(result_list[0][1])} \n'
-                    f'STD {statistics.stdev(result_list[0][1])} \n'
+                    f'Average turns to solve: {statistics.mean(result_list[0][1])} \n'
+                    f'StD Dev: {statistics.stdev(result_list[0][1])} \n'
                     f'Success Rate: {((len(result_list[0][1])) / self.simulations_per_word) * 100}'
                     f'++++ \n'
                     f'Worst word: {result_list[-1][0]} \n'
-                    f'Mean {statistics.mean(result_list[-1][1])} \n'
-                    f'STD {statistics.stdev(result_list[-1][1])} \n'
+                    f'Average turns to solve: {statistics.mean(result_list[-1][1])} \n'
+                    f'StD Dev: {statistics.stdev(result_list[-1][1])} \n'
                     f'Success Rate: {((len(result_list[-1][1])) / self.simulations_per_word) * 100}'
-                    f'++++\n'
+                    f'++++\n\n'
                     f'pValue {results.pvalue}\n')
 
         if results.pvalue < 0.05:

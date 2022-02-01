@@ -12,7 +12,8 @@ def main():
     solver.simple_experiment()
 
     # You can run the simple solve function by itself to see how an individual word performs
-    # solver.simple_solve(logging=True, word='tread')
+    # solver.simple_solve(logging=True, word='queue')  # worst possible starting guess
+    # solver.simple_solve(logging=True, word='slate')  # best possible starting guess
 
     # Please do not cheat, this function is just for fun.
     # solver.help_me_solve()

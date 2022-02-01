@@ -1,6 +1,5 @@
 from corpus import Corpus
 from random import choice
-from logzero import logger
 
 
 class Wordle:
